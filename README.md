@@ -21,26 +21,24 @@ The goal is not to overwhelm you with theory, but to give you exactly what you n
 
 ## How the documentation is structured
 
-Documentation is organised by system, not by product version.
+Documentation is organised by system. Each system follows the same structure:
 
-Each system includes:
-
-- An overview explaining what the system does
+- An overview explaining what the system does and its requirements
 - A Quick Start guide to get you running fast
-- Pages covering architecture, functions, and data assets
-- A Common Issues section for troubleshooting
+- An architecture section explaining how the system is built
+- Core concepts covering the key moving parts
+- A full API reference for all callable functions
+- Events, UI, and multiplayer sections where relevant
+- A debugging section with common issues and solutions
+- A changelog tracking updates
 
 You do not need to read everything in order. Most users can jump straight to the Quick Start of the system they are using.
 
 ## Supported Unreal Engine Versions
 
-Each system documents its supported Unreal Engine versions in its Overview page.
-
-Unless otherwise stated, systems are designed to work with Unreal Engine 5.5+ and follow Blueprint-first workflows with minimal project-level configuration.
+Each system documents its supported Unreal Engine versions in its Overview page. Unless otherwise stated, systems are designed to work with Unreal Engine 5.5+ and follow Blueprint-first workflows with minimal project-level configuration.
 
 ## Support
-
-If you need help, want to report a bug, or would like to stay informed about updates and new systems:
 
 - 💬 **Discord** - [discord.gg/VSu4A7XxA7](https://discord.gg/VSu4A7XxA7)
 - 📧 **Email** - brightnodestudio@gmail.com
