@@ -2,16 +2,16 @@
 
 This guide gets the system running on a character in five minutes.
 
----
+***
 
 ## Minimal Setup Checklist
 
-- [ ] Add **BP_AttributeComponent** to your actor
-- [ ] Implement **BPI_AttributeSystem** interface on your actor
-- [ ] Assign a **DA_AttributeSetPreset** to the component
-- [ ] Press Play and verify attributes appear in the debug widget (F3)
+* [ ] Add **BP\_AttributeComponent** to your actor
+* [ ] Implement **BPI\_AttributeSystem** interface on your actor
+* [ ] Assign a **DA\_AttributeSetPreset** to the component
+* [ ] Press Play and verify attributes appear in the debug widget (F3)
 
----
+***
 
 ## Interacting With the System
 
@@ -42,7 +42,7 @@ Get Component (BP_AttributeComponent)
 → Handle (store this if you need to remove it later)
 ```
 
----
+***
 
 ## Binding to Events
 
@@ -56,17 +56,17 @@ Get Component (BP_AttributeComponent)
 
 For UI, use the **Client RPC** versions of all events - these fire on the owning client and are safe to bind to from widgets.
 
----
+***
 
 ## Next Steps
 
-- Read the [Architecture Overview](../architecture/overview.md) to understand how the system is structured
-- Review the [Attribute Reference](../attributes/reference.md) for all nine included attributes
-- See the [Public API Reference](../api/overview.md) for every available function
+* Read the [Architecture Overview](../architecture/overview.md) to understand how the system is structured
+* Review the [Attribute Reference](../core-concepts/attribute-reference.md) for all nine included attributes
+* See the [Public API Reference](../api/overview.md) for every available function
 
----
+***
 
 ## Support
 
-- 💬 **Discord** - [discord.gg/VSu4A7XxA7](https://discord.gg/VSu4A7XxA7)
-- 📧 **Email** - brightnodestudio@gmail.com
+* 💬 **Discord** - [discord.gg/VSu4A7XxA7](https://discord.gg/VSu4A7XxA7)
+* 📧 **Email** - brightnodestudio@gmail.com

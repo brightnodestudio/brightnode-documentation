@@ -2,10 +2,6 @@
 
 The Outline Preset Library registers the Outline Preset Data Assets available to BNOS.
 
-## Library Name
-
-Optional identifier for the library.
-
 ## Outline Presets
 
 Array containing the Outline Preset Data Assets registered with the library.

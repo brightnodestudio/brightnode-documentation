@@ -6,6 +6,8 @@ The World Manager exposes an advanced API for direct Team and Global outline man
 For standard gameplay integration, prefer the Outline Component's public API.
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
 ## Apply
 
 ### ApplyTeamOutline

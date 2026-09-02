@@ -1,4 +1,4 @@
-# Installation
+# Installation & Setup
 
 The Brightnode Outline System is supplied as an Unreal Engine project containing the complete system and a showcase level.
 
@@ -17,15 +17,20 @@ The system is built around:
 
 ## Project Setup
 
-Add the required BNOS content to your project using the distribution method provided with the Fab product.
+Migrate the Brightnode folder into your project content folder. If you already have a Brightnode product it will ask if you want to overwrite some folders, select apply to all and hit no.
 
-After integration:
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-1. Add the Outline Component to the player that will display outlines.
-2. Ensure the World Manager is present using the supplied implementation.
-3. Assign an Outline Preset Library to the World Manager.
-4. Create the Gameplay Tags required by your presets.
-5. Create and register your Outline Presets.
-6. Test a Local outline before moving on to Team or Global behaviour.
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+After Migration:
+
+1. In Project Settings set Custom Depth-Stencil Pass to Enabled with Stencil.
+2. Add the Outline Component to the player that will display outlines.
+3. Ensure the World Manager is present using the supplied implementation.
+4. Assign an Outline Preset Library to the World Manager.
+5. Create the Gameplay Tags required by your presets.
+6. Create and register your Outline Presets.
+7. Test a Local outline before moving on to Team or Global behaviour.
 
 See **Quick Start** for the complete first-outline workflow.

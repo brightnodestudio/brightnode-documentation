@@ -1,20 +1,21 @@
-# Troubleshooting
+# Common Issues
 
 ## No Outline Appears
 
 Check:
 
-1. The Outline Component exists on the relevant player.
-2. The component initialized successfully.
-3. The Outline Post Process Material is assigned.
-4. The target has an appropriate mesh component.
-5. The Gameplay Tag exists.
-6. The tag is assigned to the intended preset's **Preset Tag**.
-7. The preset is registered in the active Outline Preset Library.
-8. Mesh Selection settings match the target actor.
-9. Required Component Tags exist when using tag-based selection.
-10. The active camera is correct if your project changes cameras.
-11. Enable **Show Debug** and inspect the output.
+1. Custom Depth-Stencil Pass is set to Enabled with Stencil in the PRoject Settings
+2. The Outline Component exists on the relevant player.
+3. The component initialized successfully.
+4. The Outline Post Process Material is assigned.
+5. The target has an appropriate mesh component.
+6. The Gameplay Tag exists.
+7. The tag is assigned to the intended preset's **Preset Tag**.
+8. The preset is registered in the active Outline Preset Library.
+9. Mesh Selection settings match the target actor.
+10. Required Component Tags exist when using tag-based selection.
+11. The active camera is correct if your project changes cameras.
+12. Enable **Show Debug** and inspect the output.
 
 ## Team Outline Does Not Appear
 
@@ -32,7 +33,7 @@ Review Mesh Selection Mode and Required Mesh Tags. Required Mesh Tags are Compon
 
 Verify:
 
-```text
+```
 Has Expiry = True
 Expiry Duration > 0
 ```

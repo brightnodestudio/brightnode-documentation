@@ -1,10 +1,10 @@
 # Brightnode Outline System
 
-Version 1.0.0 | Unreal Engine 5 | Pure Blueprint
+Version 1.0.0 | Unreal Engine 5.5+ | Pure Blueprint
 
 Welcome to the official documentation for the Brightnode Outline System, a data-driven, multiplayer-ready outline framework built entirely in Blueprint for Unreal Engine 5.
 
----
+***
 
 ## What Is It?
 
@@ -12,7 +12,7 @@ The Outline System provides a reusable framework for applying and managing gamep
 
 Outline behaviour is defined through Data Assets and Gameplay Tags. Presets control visibility, lifetime, priority, appearance, mesh selection, and flashing, while the runtime system handles Local, Team, and Global presentation.
 
----
+***
 
 ## Key Features
 
@@ -29,24 +29,24 @@ Outline behaviour is defined through Data Assets and Gameplay Tags. Presets cont
 * Debug Tools, component and World Manager debug output
 * Showcase Level, working examples of the major features
 
----
+***
 
 ## Requirements
 
-| Requirement | Detail |
-| --- | --- |
-| Engine Version | Unreal Engine 5 |
-| Implementation | Pure Blueprint |
-| Gameplay Tags | Required |
-| Multiplayer | Supported |
-| C++ | Not required |
+| Requirement    | Detail             |
+| -------------- | ------------------ |
+| Engine Version | Unreal Engine 5.5+ |
+| Implementation | Pure Blueprint     |
+| Gameplay Tags  | Required           |
+| Multiplayer    | Supported          |
+| C++            | Not required       |
 
----
+***
 
 ## Support
 
 If you have questions, run into issues, or want to share what you've built:
 
-* Discord, use the Brightnode Studio community link supplied with the product
-* Email, brightnodestudio@gmail.com
-* Fab Store, Brightnode Studio
+* [Discord](https://discord.gg/3zzePdPEa)
+* Email: brightnodestudio@gmail.com
+* [Fab Store](https://www.fab.com/sellers/Brightnode%20Studio)
