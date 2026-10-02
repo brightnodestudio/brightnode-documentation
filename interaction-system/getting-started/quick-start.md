@@ -1,54 +1,95 @@
 # Quick Start Guide
 
-This guide walks you through setting up a basic Press to Interact system. The entire setup takes only a few minutes and works in both singleplayer and multiplayer.
+This guide covers the minimum setup required to create your first working interaction.
 
-## 1. Create an Interactable Actor
+By the end, you will have a player that can detect, focus, and interact with an actor in the level.
 
-Create a new Blueprint inheriting from **BP\_BaseInteractable**.
+### 1. Add the Interaction Component to Your Player
 
-## 2. Create an Interaction Data Asset
+Open your player Character or Pawn Blueprint and add the Brightnode Interaction Component.
 
-Create a new Data Asset using **DA\_Interactable** and configure:
+The Interaction Component handles the player-side interaction flow, including:
 
-- Interaction type — set to Press for this guide
-- UI text
-- Icons
-- Interaction behaviour settings
+* Focus detection
+* Interaction requests
+* Interaction state
+* Prompt handling
+* Multiplayer interaction flow
 
-## 3. Apply the Data Asset
+Once added, check the details pannel and setup the config section as you require, the component can then begin detecting interactable actors using the configured Interaction trace channel.
 
-Open your Interactable Blueprint and assign the DA\_Interactable you created.
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
-## 4. Add a Mesh
+### 2. Create an Interaction Definition
 
-Add a mesh component to your interactable blueprint. Ensure the mesh collision blocks the **Interaction** trace channel.
+Create a new Interaction Definition Data Asset.
 
-## 5. Place the Actor in the World
+In the Content Browser:
 
-Drag your interactable blueprint into the level.
+`Right Click → Miscellaneous → Data Asset`
 
-## 6. Setup the Player Character
+Select the DA\_Interactable class.
 
-Open your Character Blueprint and add the component **AC\_BNInteractionSystem**.
+The Interaction Definition controls how the interaction behaves and how it is presented to the player.
 
-Configure:
+For your first interaction, use a simple **Instant** interaction.
 
-- **Focus Trace Settings** - controls the forward interaction trace
-- **Radius Scan Settings (Optional)** - detects nearby interactables not directly looked at
-- **Outline Settings (Optional)** - highlights interactables when focused
+### 3. Make an Actor Interactable
 
-## 7. Setup the Player Controller
+Open any Actor Blueprint that you want the player to interact with.
 
-Add the **Interaction Mapping Context** to your input system in the Player Controller.
+Add the Brightnode Interactable Component.
 
-## 8. Implement Interaction Logic
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
-Open your Interactable Blueprint and implement the interface function **Call Interact**. Add the gameplay logic you want to trigger — opening a door, picking up an item, activating a switch.
+Implement the BPI\_Interactable Interface.
 
-## Result
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-When the player looks at the interactable:
+Assign your Interaction Definition Data Asset to the component.
 
-- The interaction prompt appears with the correct input icon
-- The object highlights if outlines are enabled
-- Pressing the interaction key triggers the Call Interact logic
+Any Actor Blueprint can become interactable by adding the component. No dedicated interactable parent class is required.
+
+### 4. Check Collision
+
+The actor must have collision that blocks the `Interaction` trace channel.
+
+Select the mesh or collision component that should be detected and confirm that its collision response to `Interaction` is set to:
+
+`Block`
+
+If the interaction trace cannot hit the actor, the actor cannot be focused or interacted with.
+
+### 5. Respond to the Interaction
+
+Use the Interactable Component's events or dispatchers to execute your gameplay logic.
+
+For example, an interaction could:
+
+* Open a door
+* Activate a switch
+* Pick up an item
+* Trigger dialogue
+* Start an animation
+* Call another gameplay system
+
+The Interaction System determines when the interaction occurs.
+
+Your actor determines what happens when it does.
+
+### 6. Test the Interaction
+
+Compile and save your Blueprints, then place the interactable actor in the level.
+
+Start the game and look at the actor.
+
+When the actor is detected:
+
+* It becomes focused
+* The interaction prompt appears
+* The configured focus outline can be displayed
+* The actor can respond to interaction events
+
+The basic runtime flow is:
+
+`Detect → Focus → Prompt → Interact → Execute`
