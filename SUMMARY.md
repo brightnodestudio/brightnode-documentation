@@ -124,4 +124,5 @@
   * [Terminology](outline-system/reference/terminology.md)
   * [Showcase Level](outline-system/showcase/showcase-level.md)
   * [Best Practices](outline-system/best-practices.md)
+* [Brightnode Footstep System](brightnode-footstep-system.md)
 * [Support & Contact](support.md)
