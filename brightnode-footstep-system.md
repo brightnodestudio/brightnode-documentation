@@ -1,2 +1,0 @@
-# Brightnode Footstep System
-
