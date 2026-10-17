@@ -39,7 +39,7 @@ Assign the desired Niagara systems to the appropriate surface and movement confi
 
 The system supports left and right footprint decals.
 
-These can be used to display footprints on surfaces such as dirt, mud, sand and snow.
+These can be used to display footprints on surfaces such as concrete, sand and dirt, these are configured per material inside the data asset preset.
 
 Each footstep event includes foot-side information so that the corresponding footprint can be selected.
 
